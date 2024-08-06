@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>FORMULARIO DE PERSONA </h2>
+    <h3>Agregar todos tus datos personales segun indica cada espacio</h3>
+     <form> 
+        <input type="text" name="Nombre" placeholder="Nombre y Apellido">
+<br><br>
+        <label for="estado-civil">Estado Civil:</label><br>
+        <input type="radio" id="soltero" name="estado-civil" value="soltero" required>
+        <label for="soltero">Soltero/a</label><br>
+        <input type="radio" id="casado" name="estado-civil" value="casado">
+        <label for="casado">Casado/a</label><br>
+        <input type="radio" id="divorciado" name="estado-civil" value="divorciado">
+        <label for="divorciado">Divorciado/a</label><br><br>
+
+        
+        <label for="fecha-nacimiento">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required><br><br>
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="genero">Género:</label><br>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="negro">Negro</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+      
+        <label for="pais">Pais de origen:</label><br>
+        <select id="pais" name="pais" required>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="paraguay">Paraguay</option>
+            <option value="bolivia">Bolivia</option>
+            <option value="brasil">Brasil</option>
+            <option value="colombia">Colombia</option>
+            <option value="ecuador">Ecuador</option>
+            <option value="peru">Perú</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="venezuela">Venezuela</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        <label for="intereses">Intereses:</label><br>
+        <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+        <label for="tecnologia">Tecnología</label><br>
+        <input type="checkbox" id="deporte" name="intereses" value="deporte">
+        <label for="deporte">Deporte</label><br>
+        <input type="checkbox" id="musica" name="intereses" value="musica">
+        <label for="musica">Música</label><br>
+        <input type="checkbox" id="arte" name="intereses" value="arte">
+        <label for="arte">Arte</label><br><br>
+
+        <label for="biografia">Biografía:</label><br>
+        <textarea id="biografia" name="biografia" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+     </form>
+</body>
+</html>
